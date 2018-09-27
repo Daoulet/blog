@@ -1,7 +1,16 @@
 {% extends "mainApp/wrapper.html" %}
-
 {% block content %}
-  <h5 class="text-info">{{articles.title}}</h5>
-  <h6 class="text info">Опубликовано: {{articles.date|date:"Y-m-d в H:i:s"}}</h6>
-  <p>{{articles.body|safe|linebreaks}}</p>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   </head>
+   <body>
+     <h5 class="text-info">{{articles.title}}</h5>
+     <h6 class="text info">Опубликовано: {{articles.date|date:"Y-m-d в H:i:s"}}</h6>
+     <p>{{articles.body|safe|linebreaks}}</p>
+   </body>
+</html>
 {% endblock %}

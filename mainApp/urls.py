@@ -5,5 +5,4 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^contact/', views.contact, name='contact'),
     url(r'^resume/', views.resume, name='resume'),
-
 ]

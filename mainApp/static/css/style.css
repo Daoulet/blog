@@ -8,9 +8,6 @@
  .navbar-brand {
    color: #FFFFFF;
  }
- .jumbotron {
-   background: #E0FFFF;
- }
  .center {
    text-align: center;
    color: #00FF00;
@@ -32,4 +29,19 @@
  -webkit-column-gap: 30px;
  -moz-column-gap: 30px;
  column-gap: 30px;
+ font-family: 'Lobster';
+}
+.center1 {
+  text-align: center;
+  color: #001D11;
+}
+.right {
+  text-align: right;
+  color: #4D2859;
+}
+.font_4 {
+  color:#28594D;
+}
+.font_3 {
+  color: #000000;
 }
