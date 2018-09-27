@@ -1,7 +1,17 @@
 {% extends "mainApp/wrapper.html" %}
-
 {% block content %}
-  {% for val in values %}
-    <p>{{val}}</p>
-  {% endfor %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>HTML Document</title>
+      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+   </head>
+   <body>
+            <div class="center">
+
+            </div>
+   </body>
+</html>
 {% endblock %}

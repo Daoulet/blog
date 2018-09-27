@@ -1,0 +1,35 @@
+.block1  {
+  width: auto; /* Ширина слоя */
+  margin: 0px; /* Значение отступов */
+  padding: 10px; /* Поля вокруг текста */
+  /* border: 4px solid black; /* Параметры границы */
+  background: #8B0000; /* Цвет фона */
+ }
+ .navbar-brand {
+   color: #FFFFFF;
+ }
+ .jumbotron {
+   background: #E0FFFF;
+ }
+ .center {
+   text-align: center;
+   color: #00FF00;
+ }
+ .mais
+ {
+   font-family: Arial, Helvetica, Verdana, sans-serif;
+   font-weight: lighter; /* Светлое начертание */
+   font: 200% serif;
+   color:#00FF00;
+ }
+ .column {
+ -webkit-column-width: 300px;
+ -moz-column-width: 200px;
+ column-width: 200px;
+ -webkit-column-count: 3;
+ -moz-column-count: 3;
+ column-count: 3;
+ -webkit-column-gap: 30px;
+ -moz-column-gap: 30px;
+ column-gap: 30px;
+}
