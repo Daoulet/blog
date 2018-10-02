@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^', include('mainApp.urls')),
     url(r'^news/', include('news.urls')),
     url(r'^resume/', include('mainApp.urls')),
+    url(r'^contact/', include('contact.urls')),
 ]

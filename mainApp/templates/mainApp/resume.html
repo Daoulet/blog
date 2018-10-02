@@ -8,15 +8,68 @@
       <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
    </head>
    <body>
-     <h4 class="font_4"><span class="font_4">Опыт работы</span></h4><hr>
-     <h6 class="font_3"><span class="font_3">ТОО "Astana Asset Managment" - Инженер по видео и звуку. С 1 ноября 2017 года по н.в.</span></h6>
-     <h4 class="font_4"><span class="font_4">Образование</span></h4><hr>
-     <a style="color:#000900;" href="https://kuef.kz/ru/">Казахский Университет экономики финансов и международной торговли</a><br>
-     <a style="color:#000900;">Вычислительная техника и программное обеспечение 2013-2017 гг.</a><br><br>
+     <h4 class="font_4"><span>Опыт работы</span></h4><hr>
+     <h6 class="font_3"><span>ТОО "Astana Asset Managment" - Инженер по видео и звуку. С 1 ноября 2017 года по н.в.</span></h6>
+     <h4 class="font_4"><span>Образование</span></h4><hr>
+     <div class="column">
+       <div class="blokimg">
+         <div class="overlay" id="contenedor1">
+           <div class="overlay_container">
+             <a href="#close">
+               <img src="{% static 'mainApp/image/1.jpg' %}"/>
+             </a>
+           </div>
+         </div>
+         <a href="#contenedor1">
+           <img class="image" src="{% static 'mainApp/image/1.jpg' %}" id="imagenM1" />
+         </a>
+       </div>
+       <a style="color:#000900;" class="font_3" href="https://kuef.kz/ru/">Казахский Университет экономики финансов и международной торговли</a><br>
+       <a style="color:#000900;" class="font_3"><span>Вычислительная техника и программное обеспечение 2013-2017 гг.</span></a><br><br>
+     </div>
+     <br>
      <h4 class="font_4"><span style="color:#28594D;">Дополнительная информация</span></h4><hr>
      <a style="color:#000900;">Знание языков: французский, русский, казахский, английский</a><br>
      <a style="color:#000900;">Качества: прагматичность и пунктуальность</a><br>
      <a style="color:#000900;">Технические навыки: Компьютерная инженерия, Linux, Django, HTML5, CSS, Node.js, Git и т.д.</a><br>
      <a style="color:#000900;">Занятие в свободное время: Книги, киберспорт и спорт</a>
+     <!--<div class="image"><a href="#"><img width="380" height="250" src="{% static 'mainApp/image/111.jpg' %}" /></a></div>-->
+     <!-- <img src="{% static 'mainApp/image/111.jpg' %}" class="img-thumbnail"> -->
+     <br><br><h4 class="font_4"><span>Дополнительное образование</span></h4><hr><br>
+     <div class="all">
+   		<input checked type="radio" name="respond" id="desktop">
+   			<article id="slider">
+   					<input checked type="radio" name="slider" id="switch1">
+   					<input type="radio" name="slider" id="switch2">
+   					<input type="radio" name="slider" id="switch3">
+   					<input type="radio" name="slider" id="switch4">
+   					<input type="radio" name="slider" id="switch5">
+   				<div id="slides">
+   					<div id="overflow">
+   						<div class="image1">
+   							<article><img src="{% static 'mainApp/image/111.jpg' %}"></article>
+   							<article><img src="{% static 'mainApp/image/112.jpg' %}"></article>
+   							<article><img src="{% static 'mainApp/image/113.jpg' %}"></article>
+   							<article><img src="{% static 'mainApp/image/114.jpg' %}"></article>
+   							<article><img src="{% static 'mainApp/image/115.jpg' %}"></article>
+   						</div>
+   					</div>
+   				</div>
+   				<div id="controls">
+   					<label for="switch1"></label>
+   					<label for="switch2"></label>
+   					<label for="switch3"></label>
+   					<label for="switch4"></label>
+   					<label for="switch5"></label>
+   				</div>
+   				<div id="active">
+   					<label for="switch1"></label>
+   					<label for="switch2"></label>
+   					<label for="switch3"></label>
+   					<label for="switch4"></label>
+   					<label for="switch5"></label>
+   				</div>
+   			</article>
+   	</div>
 </html>
 {% endblock %}
