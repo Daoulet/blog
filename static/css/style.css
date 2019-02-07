@@ -8,6 +8,8 @@ header {
 	height: 100px;
 	background: red;
 	display: flex;
+	font-family: 'Merienda', cursive;
+	box-shadow: 0 0 10px rgba(0,0,0,0.9); /* Параметры тени */
 }
 
 .topnav {
