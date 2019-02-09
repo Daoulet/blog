@@ -14,3 +14,48 @@ header {
 
 .topnav {
 }
+
+.image { /* картинка увелич. при наведений курсора */
+	overflow:hidden;
+	width: 180px;
+	height:150px;
+	border: 3px solid red;
+}
+ /* .image img {
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+.image img:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }  конец */
+
+
+ .blokimg { /* картинка увелич. при клике начало */
+ 	position: relative;
+ }
+ .overlay{
+ 	display: none;
+ 	height: auto;
+ 	left: 25%;
+ 	position: absolute;
+ 	top: -45%;
+ 	width: auto;
+ 	z-index: 999;
+ }
+ .overlay .overlay_container{
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	text-align: center;
+ }
+ .overlay_container img{
+ 	background-color: #FF0000;
+ 	padding: 10px;
+ 	-webkit-border-radius: 51px;
+ 	-moz-border-radius: 51px;
+ }
+ .overlay:target {
+ 	display: table;   /* конец */
+ }
