@@ -6,7 +6,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+	<meta charset="utf-8" />
 </head>
 
 <body>
@@ -15,19 +15,8 @@
 		<h2>Опыт работы</h2><hr>
 		<h4>ТОО "Astana Asset Managment" - Инженер по телефонной связи и телевидению. С 1 ноября 2017 года до 31 января</h4>
 		<h4>ТОО "Astana Asset Managment" - Инженер по видео и звуку. С 1 февраля 2017 года по н.в.</h4><br>
-		<h2>Образование</h2><hr>
-		<div class="blokimg">
-			<div class="overlay" id="contenedor1">
-				<div class="overlay_container">
-					<a href="#close"><img src="{% static 'img/5.jpg' %}"/></a>
-				</div>
-			</div>
-			<a href="#contenedor1">
-				<img class="image" src="{% static 'img/5.jpg' %}" id="imagenM1" />
-			</div>
-		</div>
 		<h2>Дополнительное образование</h2><hr>
-		<div style="width: 1000px; height: 1000px">
+		<div style="width: 800px; height: 800px">
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -55,31 +44,39 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script>
-		window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
-	<script>
-		$(function() {
-			Holder.addTheme("thumb", {
-				background: "#55595c",
-				foreground: "#eceeef",
-				text: "Thumbnail"
-			});
-			$('#myCarousel').carousel({
+			<h2>Образование</h2><hr>
+			<div class="blokimg">
+				<div class="overlay" id="contenedor1">
+					<div class="overlay_container">
+						<a href="#close"><img src="{% static 'img/5.jpg' %}"/></a>
+					</div>
+				</div>
+				<a href="#contenedor1">
+					<img class="image" src="{% static 'img/5.jpg' %}" id="imagenM1" />
+				</div>
+			</div>
+			<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+			<script>
+				window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+			<script>
+				$(function() {
+					Holder.addTheme("thumb", {
+						background: "#55595c",
+						foreground: "#eceeef",
+						text: "Thumbnail"
+					});
+					$('#myCarousel').carousel({
             // Options
         });
-		});
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
+				});
+			</script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+			<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+			<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+		</body>
 
-</html>
-{% endblock %}
+		</html>
+		{% endblock %}
