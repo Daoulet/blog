@@ -3,10 +3,7 @@
 	margin: 0;
 }
 
-header {
-	width: auto;
-	height: 100px;
-	background: red;
+nav {
 	font-family: 'Merienda', cursive;
 	box-shadow: 0 0 10px rgba(0,0,0,0.9); /* Параметры тени */
 }
@@ -15,9 +12,6 @@ main {
 /*	background: url("/static/img/01.jpg");
 	width: 100%
 	height 100%; */
-}
-
-.topnav {
 }
 
 .image { /* картинка увелич. при наведений курсора */
