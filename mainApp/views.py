@@ -8,3 +8,6 @@ def resume(request):
 
 def contact(request):
 	return render(request, 'mainApp/contact.html')
+
+def mail(request):
+	return render(request, 'mainApp/mail.php')
