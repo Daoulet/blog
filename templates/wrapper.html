@@ -31,7 +31,7 @@
 
   <header>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark default-color">
+    <nav class="navbar navbar-expand-lg navbar-dark danger-color">
 
       <!-- Navbar brand -->
       <a class="navbar-brand" href="#"><img style="width: 150px; height: 50px;" src="{% static 'img/logos.gif' %}"></a>
@@ -71,13 +71,16 @@
 
   </nav>
 </header>
-{% block content %}
-{% endblock %}
+
+<div style="margin: 3%">
+  {% block content %}
+  {% endblock %}
+</div>
 
 <!-- Start your project here-->
 
 <!-- Footer -->
-<footer class="page-footer font-small default-color darken-3">
+<footer class="page-footer font-small danger-color darken-3">
 
   <!-- Footer Elements -->
   <div class="container">
