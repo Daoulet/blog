@@ -11,11 +11,11 @@
 
 <body>
     {% for post in object_list %}
-    <div style="margin-left: 3%;">
+    <div>
         <a href="{{post.id}}"><h3 style="color: black">{{post.title}}</h3></a>
         <h7>{{post.date|date:"d-m-Y"}}</h7><br><br>
     </div>
-    {% endfor %}<br><br>
+    {% endfor %}
 </body>
 
 </html>

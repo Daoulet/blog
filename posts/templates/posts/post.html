@@ -9,26 +9,29 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <style type="text/css">
-#maket {
-    width: 100%;
-    /* Ширина всей таблицы */
-}
-TD {
-    vertical-align: top;
-    /* Вертикальное выравнивание в ячейках */
-    padding: 10px;
-    /* Поля вокруг ячеек */
-}
-TD#leftcol {
-    width: 200px;
-    /* Ширина левой колонки */
-    /* background: #ccc; */
-    /* Цвет фона левой колонки */
-}
-TD#rightcol {
-    /* background: #fc3; */
-    /* Цвет фона правой колонки */
-}
+    #maket {
+        width: 100%;
+        /* Ширина всей таблицы */
+    }
+
+    TD {
+        vertical-align: top;
+        /* Вертикальное выравнивание в ячейках */
+        padding: 10px;
+        /* Поля вокруг ячеек */
+    }
+
+    TD#leftcol {
+        width: 200px;
+        /* Ширина левой колонки */
+        /* background: #ccc; */
+        /* Цвет фона левой колонки */
+    }
+
+    TD#rightcol {
+        /* background: #fc3; */
+        /* Цвет фона правой колонки */
+    }
 </style>
 
 <body>
@@ -39,7 +42,7 @@ TD#rightcol {
             <tr>
                 <td id="leftcol">
                     <img src="{{ article.image.url }}" style="width: 300px; height: 300px;">
-            </td>
+                </td>
                 <td id="rightcol">
                     <p>{{article.body|safe|linebreaks}}</p>
                 </td>
@@ -50,3 +53,4 @@ TD#rightcol {
 
 </html>
 {% endblock %}
+

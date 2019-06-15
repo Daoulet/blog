@@ -1,2 +1,157 @@
-{% extends "wrapper.html" %}
-{% load staticfiles %}
+{% load static %}
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>
+		{% block title %}
+		Блог
+		{% endblock %}
+	</title>
+	<link rel="shortcut icon" href="{% static 'img/001.png' %}" type="image/x-icon">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<!-- Material Design Bootstrap -->
+	<link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+	<!-- Your custom styles (optional) -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<script src="{% static 'css/style.css' %}"></script>
+	<script src="{% static 'js/jquery-1.11.1.js' %}"></script>
+	<script src="{% static 'js/rango-jquery.js' %}"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<a href="#" class="logo">LOGO</a>
+		<ul class="nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Partfolio</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+	<div class="banner-area" id="home">
+		<div class="text-part">
+			<h1>About Area</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sint culpa laboriosam doloremque quam, tempora suscipit accusamus laudantium iusto eaque assumenda, cum nisi beatae pariatur temporibus odio. Nisi modi fugit reiciendis aperiam corporis cumque omnis fuga facilis accusantium sapiente ipsa porro eum aliquam, in eius totam, voluptatem minima debitis vitae.</p>
+		</div>
+	</div>
+	<div class="about-area" id="about">
+		<h1>About Area</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sint culpa laboriosam doloremque quam, tempora suscipit accusamus laudantium iusto eaque assumenda, cum nisi beatae pariatur temporibus odio. Nisi modi fugit reiciendis aperiam corporis cumque omnis fuga facilis accusantium sapiente ipsa porro eum aliquam, in eius totam, voluptatem minima debitis vitae.</p>
+	</div>
+	<div class="port-area" id="portfolio">
+		<h1>Portfolio Area</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sint culpa laboriosam doloremque quam, tempora suscipit accusamus laudantium iusto eaque assumenda, cum nisi beatae pariatur temporibus odio. Nisi modi fugit reiciendis aperiam corporis cumque omnis fuga facilis accusantium sapiente ipsa porro eum aliquam, in eius totam, voluptatem minima debitis vitae.</p>
+	</div>
+	<div class="services-area" id="services">
+		<h1>Serveces Area</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sint culpa laboriosam doloremque quam, tempora suscipit accusamus laudantium iusto eaque assumenda, cum nisi beatae pariatur temporibus odio. Nisi modi fugit reiciendis aperiam corporis cumque omnis fuga facilis accusantium sapiente ipsa porro eum aliquam, in eius totam, voluptatem minima debitis vitae.</p>
+	</div>
+	<div class="contact-area" id="contact">
+		<h1>Contact Area</h1><br
+		<div class="d-flex p-2 col-example">
+			<!--Section: Contact v.2-->
+		<section class="mb-4">
+
+			<!--Section heading-->
+			<h2 class="h1-responsive font-weight-bold text-center my-4">Связь</h2>
+			<!--Section description-->
+			<p class="text-center w-responsive mx-auto mb-5">Если у вас есть какие то вопросы или предложение напишите мне сообщение</p>
+
+			<div class="row">
+
+				<!--Grid column-->
+				<div class="col-md-9 mb-md-0 mb-5">
+					<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+						<!--Grid row-->
+						<div class="row">
+
+							<!--Grid column-->
+							<div class="col-md-6">
+								<div class="md-form mb-0">
+									<input type="text" id="name" name="name" class="form-control">
+									<label for="name" class="">Ваше имя</label>
+								</div>
+							</div>
+							<!--Grid column-->
+
+							<!--Grid column-->
+							<div class="col-md-6">
+								<div class="md-form mb-0">
+									<input type="text" id="email" name="email" class="form-control">
+									<label for="email" class="">Ваш email</label>
+								</div>
+							</div>
+							<!--Grid column-->
+
+						</div>
+						<!--Grid row-->
+
+						<!--Grid row-->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="md-form mb-0">
+									<input type="text" id="subject" name="subject" class="form-control">
+									<label for="subject" class="">Тема</label>
+								</div>
+							</div>
+						</div>
+						<!--Grid row-->
+
+						<!--Grid row-->
+						<div class="row">
+
+							<!--Grid column-->
+							<div class="col-md-12">
+
+								<div class="md-form">
+									<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+									<label for="message">Сообщение</label>
+								</div>
+
+							</div>
+						</div>
+						<!--Grid row-->
+
+					</form>
+
+					<div class="text-center text-md-left">
+						<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Отправить</a>
+					</div>
+					<div class="status"></div>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-md-3 text-center">
+					<ul class="list-unstyled mb-0">
+						<li><i class="fas fa-map-marker-alt fa-2x"></i>
+							<p>Астана, Казахстан</p>
+						</li>
+
+						<li><i class="fas fa-phone mt-4 fa-2x"></i>
+							<p>+ 8 775 *** ** **</p>
+						</li>
+
+						<li><i class="fas fa-envelope mt-4 fa-2x"></i>
+							<p>bimaganbetov1995@gmail.com</p>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+			</div>
+
+		</section>
+		<!--Section: Contact v.2-->
+		</div>
+	</div>
+</body>
+</html>
+
