@@ -60,7 +60,7 @@ a:hover {
 	flex-wrap: wrap;
 	flex-direction: row;
 	width: 100%;
-	height: 700px;
+	height: 100%;
 
 }
 
@@ -77,15 +77,6 @@ h1 {
 p {
 	font-size: 24px;
 	line-height: 50px;
-}
-
-.about-area, .contact-area {
-	background: #fefefe;
-}
-
-.port-area, .service-area {
-	background #262626;
-	color: #fff;
 }
 
 .html {
